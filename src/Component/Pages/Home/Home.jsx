@@ -7,6 +7,7 @@ import Discount from "./Discount/Discount";
 import Popular from "./Food/Popular";
 import Recommended from "./Food/Recommended";
 import Featured from "./Featured/Featured";
+import AboutUs from "./AboutUs/AboutUs";
 const Home = () => {
   useTitle("Home"),
     useEffect(() => {
@@ -22,6 +23,7 @@ const Home = () => {
         <Popular></Popular>
         <Recommended></Recommended>
         <Featured></Featured>
+        <AboutUs></AboutUs>
       </Container>
     </div>
   );
