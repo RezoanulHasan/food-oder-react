@@ -42,7 +42,7 @@ const Popular = () => {
   return (
     <Container>
       <Fade direction="down">
-        <div className=" py-15">
+        <div className=" mt-10 py-5">
           <div className="text-left border-l-4 border-[#d88d1d] pl-3">
             <h2 className="font-bold text-2xl sm:text-4xl">
               {" "}

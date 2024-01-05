@@ -43,23 +43,7 @@ const Recommended = () => {
     <>
       <Container>
         <Fade direction="down">
-          <div className=" py-15">
-            <div className="text-left border-l-4 border-[#d88d1d] pl-3">
-              <h2 className="font-bold text-2xl sm:text-4xl">
-                {" "}
-                Out Popular items
-              </h2>
-              <p className="font-medium text-lg mt-2 text-[#d8871d]">Popular</p>
-            </div>
-          </div>
-        </Fade>
-        <div className="card-actions justify-end">
-          <button className="btn btn-outline btn-error border-0 border-b-4 mt-4">
-            Add more
-          </button>
-        </div>
-        <Fade direction="down">
-          <div className="py-15">
+          <div className="mt-10 py-10">
             <div className="text-left border-l-4 border-[#d88d1d] pl-3">
               <h2 className="font-bold text-2xl sm:text-4xl">
                 {" "}
