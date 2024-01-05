@@ -22,7 +22,6 @@ const Home = () => {
         <Discount></Discount>
         <Slider></Slider>
         <Popular></Popular>
-        <Recommended></Recommended>
 
         <Featured></Featured>
         <AboutUs></AboutUs>
