@@ -43,10 +43,11 @@ const Popular = () => {
       <Fade direction="down">
         <div className="py-16 sm:py-14">
           <div className="text-left border-l-4 border-[#d88d1d] pl-3">
-            <h2 className="font-bold text-2xl sm:text-4xl">Reach Out to Us</h2>
-            <p className="font-medium text-lg mt-2 text-[#d8871d]">
-              Let's Connect
-            </p>
+            <h2 className="font-bold text-2xl sm:text-4xl">
+              {" "}
+              Out Popular items
+            </h2>
+            <p className="font-medium text-lg mt-2 text-[#d8871d]">Popular</p>
           </div>
         </div>
       </Fade>
