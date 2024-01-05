@@ -10,10 +10,10 @@
 
 ## Home
 
-- Navbar with logo, name, and essential links ( All cars and Contacts).
-- Image slider with text
-- About Us rection
-
+- Navbar with logo, and name.
+- Image slider with text.
+- About Us section.
+- popular and recommended section.
 ## Contact
 
 - Proper information with a map
