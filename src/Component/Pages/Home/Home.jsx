@@ -23,8 +23,10 @@ const Home = () => {
         <Slider></Slider>
         <Popular></Popular>
         <Recommended></Recommended>
+
         <Featured></Featured>
         <AboutUs></AboutUs>
+
         <Contact></Contact>
       </Container>
     </div>

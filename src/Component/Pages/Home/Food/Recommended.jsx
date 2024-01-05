@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Recommended = () => {
   const [recommendedItems, setRecommendedItems] = useState([]);
@@ -25,35 +28,40 @@ const Recommended = () => {
     fetchData();
   }, []);
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    className: "center",
+    centerPadding: "60px",
+  };
+
   return (
-    <div className="pt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-8">
+    <Slider {...settings}>
       {recommendedItems.map((item) => (
-        <div className="flex flex-col gap-2 w-full" key={item.Id}>
+        <div className="flex flex-col gap-4 w-full p-4  mt-10" key={item.Id}>
           <div
             className="
-              aspect-square 
-              w-full 
-              relative 
-              overflow-hidden 
-              rounded-xl
-            "
+                aspect-square 
+                w-full 
+                relative 
+                overflow-hidden 
+                rounded-xl
+              "
           >
             <img
               className="
-                object-cover 
-                h-full 
-                w-full 
-                group-hover:scale-110 
-                transition
-              "
+                  object-cover 
+                  h-full 
+                  w-full 
+                  group-hover:scale-110 
+                  transition
+                "
               src={item.ImageUrl}
               alt="Item"
             />
-            <div className="absolute top-3 right-3">
-              {/* Assuming HeartButton and ToastContainer are defined */}
-              {/* <HeartButton /> */}
-              {/* <ToastContainer /> */}
-            </div>
           </div>
           <div className="font-semibold text-lg">{item.Name}</div>
 
@@ -62,7 +70,7 @@ const Recommended = () => {
           </div>
         </div>
       ))}
-    </div>
+    </Slider>
   );
 };
 

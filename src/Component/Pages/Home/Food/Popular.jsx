@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Fade } from "react-awesome-reveal";
 const Popular = () => {
   const [popularItems, setPopularItems] = useState([]);
 
@@ -25,44 +28,60 @@ const Popular = () => {
     fetchData();
   }, []);
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    className: "center",
+    centerPadding: "60px",
+  };
+
   return (
-    <div className="pt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-8">
-      {popularItems.map((item) => (
-        <div className="flex flex-col gap-2 w-full" key={item.Id}>
-          <div
-            className="
+    <>
+      <Fade direction="down">
+        <div className="py-16 sm:py-14">
+          <div className="text-left border-l-4 border-[#d88d1d] pl-3">
+            <h2 className="font-bold text-2xl sm:text-4xl">Reach Out to Us</h2>
+            <p className="font-medium text-lg mt-2 text-[#d8871d]">
+              Let's Connect
+            </p>
+          </div>
+        </div>
+      </Fade>
+      <Slider {...settings}>
+        {popularItems.map((item) => (
+          <div className="flex flex-col gap-4 w-full p-4  mb-10" key={item.Id}>
+            <div
+              className="
               aspect-square 
-              w-full 
               relative 
               overflow-hidden 
               rounded-xl
             "
-          >
-            <img
-              className="
+            >
+              <img
+                className="
                 object-cover 
                 h-full 
                 w-full 
                 group-hover:scale-110 
                 transition
               "
-              src={item.ImageUrl}
-              alt="Item"
-            />
-            <div className="absolute top-3 right-3">
-              {/* Assuming HeartButton and ToastContainer are defined */}
-              {/* <HeartButton /> */}
-              {/* <ToastContainer /> */}
+                src={item.ImageUrl}
+                alt="Item"
+              />
+            </div>
+            <div className="font-semibold text-lg">{item.Name}</div>
+
+            <div className="flex flex-row items-center gap-1">
+              <div className="font-semibold">$ {item.Price}</div>
             </div>
           </div>
-          <div className="font-semibold text-lg">{item.Name}</div>
-
-          <div className="flex flex-row items-center gap-1">
-            <div className="font-semibold">$ {item.Price}</div>
-          </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </Slider>{" "}
+    </>
   );
 };
 
