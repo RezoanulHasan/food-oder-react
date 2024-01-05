@@ -8,6 +8,7 @@ import Popular from "./Food/Popular";
 import Recommended from "./Food/Recommended";
 import Featured from "./Featured/Featured";
 import AboutUs from "./AboutUs/AboutUs";
+import Contact from "./Contact/Contact";
 const Home = () => {
   useTitle("Home"),
     useEffect(() => {
@@ -24,6 +25,7 @@ const Home = () => {
         <Recommended></Recommended>
         <Featured></Featured>
         <AboutUs></AboutUs>
+        <Contact></Contact>
       </Container>
     </div>
   );
