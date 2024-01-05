@@ -1,8 +1,57 @@
-# React + Vite
+## Website name : FoodHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## website type: Frontend react single page web application
 
-Currently, two official plugins are available:
+## live link: https://rococo-melba-f394d2.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- responsive for all device
+
+## Home
+
+- Navbar with logo, name, and essential links ( All cars and Contacts).
+- Image slider with text
+- About Us rection
+
+## Contact
+
+- Proper information with a map
+- Direct massege system
+
+## Technologies Used
+
+- React
+- CSS (tailwinds -(daisy))
+
+## Package Used
+
+- Swiper js
+- Framer-motion
+- react-awesome-reveal
+- react icons
+- react-slick slick-carousel
+- react-scroll
+
+## For Map
+
+- react-leaflet
+
+## website hosting
+
+- Client-side (netlify)
+
+## For Running Website
+
+- just download or clone this repository on your system.
+- npm install
+- npm run dev
+
+## Contact
+
+For any inquiries or further information, please reach out to:
+
+- Email: rezoanulhasan96@gmail.com
+- Phone: +088 01734639066
+
+Feel free to explore the website and enjoy your experience with FoodHub!

@@ -12,7 +12,7 @@ const Popular = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10"
+          "https://y-teal-seven.vercel.app/foods"
         );
 
         // Filter items where "IsPopular" is true
@@ -79,11 +79,6 @@ const Popular = () => {
                 src={item.ImageUrl}
                 alt="Item"
               />
-              <div className="absolute top-3 right-3">
-                {/* Assuming HeartButton and ToastContainer are defined */}
-                {/* <HeartButton /> */}
-                {/* <ToastContainer /> */}
-              </div>
             </div>
             <div className="font-semibold text-lg">{item.Name}</div>
 

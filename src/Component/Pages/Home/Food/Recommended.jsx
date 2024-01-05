@@ -12,7 +12,7 @@ const Recommended = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10"
+          "https://y-teal-seven.vercel.app/foods "
         );
 
         // Filter items where "IsRecommended" is true
